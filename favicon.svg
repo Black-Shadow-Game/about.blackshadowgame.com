@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Shield / badge shape -->
+  <path d="M32 2L58 12V34C58 48 44 58 32 62C20 58 6 48 6 34V12L32 2Z" fill="#0a0a0f" stroke="url(#g)" stroke-width="2.5" filter="url(#glow)"/>
+  <!-- B -->
+  <text x="14" y="42" font-family="'Orbitron', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="url(#g)" filter="url(#glow)">B</text>
+  <!-- G -->
+  <text x="33" y="42" font-family="'Orbitron', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="url(#g)" filter="url(#glow)">G</text>
+</svg>
