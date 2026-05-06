@@ -1,0 +1,14 @@
+{
+  "name": "about.blackshadowgame.com",
+  "version": "1.0.0",
+  "description": "The official website for Hongkong Black Shadow Game Technology Limited.",
+  "scripts": {
+    "dev": "npx http-server . -p 8899 --cors -c-1 -s",
+    "deploy": "npx wrangler pages deploy . --project-name=blackshadowgame --branch=main",
+    "build": "echo 'Static site, no build step needed'"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "wrangler": "^4.88.0"
+  }
+}

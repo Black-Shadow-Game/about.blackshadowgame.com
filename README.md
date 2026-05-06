@@ -23,14 +23,22 @@ about.blackshadowgame.com/
 └── favicon.svg      # BG shield icon
 ```
 
-## Deploy
-
-Deployed on [Cloudflare Pages](https://pages.cloudflare.com/).
+## Development
 
 ```bash
-# Deploy with Wrangler
-wrangler pages deploy . --project-name=blackshadowgame --branch=main
+# Install dependencies
+npm install
+
+# Start local dev server (http://localhost:8899)
+npm run dev
+
+# Deploy to Cloudflare Pages
+npm run deploy
 ```
+
+## Deploy
+
+Deployed on [Cloudflare Pages](https://pages.cloudflare.com/). CF Pages Pretty URLs are enabled — `/privacy` serves `privacy.html` without 308 redirects.
 
 ## Contact
 
